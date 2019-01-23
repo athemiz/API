@@ -14,7 +14,9 @@
  - sobrenome
  - idade
  - funcao
+
 (POST) funcionarios/destroy/id – Excluí o registro referente ao id especificado no post
+
 (POST) funcionarios/update – Atualiza o registro conforme os dados do post referente ao id especificado.
  - Parametros opcionais da url:
  - nome
