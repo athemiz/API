@@ -7,7 +7,9 @@
 # Rotas
 
 (GET) funcionarios/list - Retorna todos os registro inseridos
+
 (GET) funcionarios/show/id – Retorna o registro referente ao id especificado
+
 (POST) funcionarios/create - Criar um novo registro de funcionário a partir do post
  - Parametros da url:
  - nome
