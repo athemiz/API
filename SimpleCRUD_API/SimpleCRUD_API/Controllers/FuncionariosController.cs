@@ -62,6 +62,7 @@ namespace SimpleCRUD_API.Controllers
                 if (sobrenome != "") listaFuncionarios[id].sobrenome = sobrenome;
                 if (funcao != "") listaFuncionarios[id].funcao = funcao;
                 if (idade.HasValue) listaFuncionarios[id].idade = idade.Value;
+                listaFuncionarios[id].dataModificacao = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
 
                 return Request.CreateResponse(HttpStatusCode.OK, "funcionario atualizado.");
             }

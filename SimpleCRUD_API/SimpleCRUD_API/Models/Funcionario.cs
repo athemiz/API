@@ -13,8 +13,8 @@ namespace SimpleCRUD_API.Models
         public string sobrenome { get; set; }
         public string funcao { get; set; }
         public int idade { get; set; }
-        public DateTime dataCriacao { get; set; }
-        public DateTime dataModificacao { get; set; }
+        public string dataCriacao { get; set; }
+        public string dataModificacao { get; set; }
 
     public Funcionario(string nome, string sobrenome, string funcao, int idade)
         {
@@ -23,8 +23,8 @@ namespace SimpleCRUD_API.Models
             this.sobrenome = sobrenome;
             this.funcao = funcao;
             this.idade = idade;
-            this.dataCriacao = DateTime.Today;
-            this.dataModificacao = DateTime.Today;
+            this.dataCriacao = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+            this.dataModificacao = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
             idCount++;
         }
     }
